@@ -1,0 +1,82 @@
+*{
+    margin: 0%;
+    padding:0%;
+    justify-content: center;
+}
+.parent1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.parent2{
+
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.parent3{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.parent4{
+    align-items: center;
+}
+.child{
+    padding: 5%;
+    margin: 0%;
+}
+child12{
+    text-align: center;
+}
+.child13 :hover{
+    background-color: black;
+    padding: 10px;
+}
+.gapValue{
+    text-align: center;
+}
+.gapImg{
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        height: 80vh; 
+        margin-left: 20%;
+}
+.pa{
+
+}
+.ch1{
+    float: left;
+}
+.ch21{
+    display: flex;
+    /* float: left; */
+}
+.child:hover{
+    transform: scale(1.1);
+    transition-duration: 1.1s;
+}
+.ch2 {
+    text-align: center; /* Center the content */
+}
+.parent2:hover{
+    background: none;
+    transition: transform(1.5s);
+}
+
+
+.ch21 img {
+    height: 50px; /* Adjust the height of the image */
+    width: 50px; /* Adjust the width of the image */
+    margin-right: 10px; /* Add spacing between image and text */
+}
+@media only screen and (max-width: 360px){
+    .child
+    {
+        height:25%;
+        width:100%;
+    }
+} 
