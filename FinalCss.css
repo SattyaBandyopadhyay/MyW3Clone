@@ -36,6 +36,10 @@ header{
     top: 0;
     background-color: white;
     padding: 2%;
+    @media(max-width:575px)
+    {
+        z-index: 5;
+    }
 }
 @media(330px<=width<=576px)
 {
@@ -82,7 +86,10 @@ header{
     padding: 5%;
     margin: 0%;
     width: 100%;
-    flex-basis:100%
+    flex-basis:100%;
+    @media (max-width: 575px) {
+        padding: 0;
+    }
 }
 
 .child13 :hover{
@@ -153,6 +160,9 @@ header{
         flex-basis: 100%;
         padding-right: 5%;
         flex-direction: column;
+        @media (max-width: 575px) {
+            padding: 0;
+        }
         
     }
     main > .pagination {
