@@ -1,12 +1,66 @@
 *{
     margin: 0%;
     padding:0%;
-    justify-content: center;
 }
+body{
+    margin:0%;
+    padding:0%;
+}
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
 .parent1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 2%;
+}
+@media(330px<=width<=576px)
+{
+    .parent1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+}
+/* @media(330px<=width<=576px)
+{
+    .child > .responsive_image{
+        height: 100%;
+        width: 80%;
+    }
+} */
+@media(330px<=width<=576px)
+{
+    .parent2{
+        display: flex;
+        justify-content: center;
+        padding-left: 80%;
+
+    }
 }
 .parent2{
 
@@ -27,10 +81,10 @@
 .child{
     padding: 5%;
     margin: 0%;
+    width: 100%;
+    flex-basis:100%
 }
-child12{
-    text-align: center;
-}
+
 .child13 :hover{
     background-color: black;
     padding: 10px;
@@ -39,14 +93,31 @@ child12{
     text-align: center;
 }
 .gapImg{
-        /* display: flex; */
+        display: flex; 
         justify-content: center;
         align-items: center;
-        height: 80vh; 
+        width: 750px;
+        height: 500px;
         margin-left: 20%;
+        margin-right: 20%;
+        
 }
-.pa{
-
+@media(325px<=width<=576px)
+{
+    section > .parent2 > .child{
+        display: flex;
+        flex-direction: column;
+        /* height: 30vh;
+        margin-left: 5%;
+        width: 50vh; */
+    }
+}
+@media(325px<=width<=576px){
+    .gapImg{
+        height: 30vh;
+        margin-left: 5%;
+        width: 50vh;
+    }
 }
 .ch1{
     float: left;
@@ -66,17 +137,44 @@ child12{
     background: none;
     transition: transform(1.5s);
 }
-
-
 .ch21 img {
     height: 50px; /* Adjust the height of the image */
     width: 50px; /* Adjust the width of the image */
     margin-right: 10px; /* Add spacing between image and text */
 }
-@media only screen and (max-width: 360px){
-    .child
-    {
-        height:25%;
-        width:100%;
+@media(max-width:576px){
+    header > .parent1{
+        flex-direction: space-between;
+        flex-basis: 33%;
+
     }
-} 
+    main > .parent2{ 
+        width: 100%;
+        flex-basis: 100%;
+        padding-right: 5%;
+        flex-direction: column;
+        
+    }
+    main > .pagination {
+    flex-direction: column;
+    }
+}
+@media(340px<=width<=576px)
+{
+    footer > .footer_part{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media(340px<=width<=576px)
+{
+    .parent2 > .child > img > .responsive_image{
+        height: 100%;
+        width: 80%;
+    }
+    img{
+        height: 100%;
+        width: 80%;
+    }
+}
